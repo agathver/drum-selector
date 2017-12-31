@@ -50,8 +50,9 @@ body {
   color: #069eff;
 }
 
-.Roller .RollerItem.highlight {
-  border: 1px solid #ccc;
+.Roller .RollerItem.disabled {
+  text-decoration: line-through;
+  color: #cccccc;
 }
 
 .Roller .RollerItem.highlight--1 {
