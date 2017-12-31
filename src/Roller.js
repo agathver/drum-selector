@@ -33,6 +33,9 @@ class Roller extends React.Component {
                         if (item.id === selectedItem) {
                             className += ' selected';
                         }
+                        if (item.disabled) {
+                            className += ' disabled'
+                        }
                         return (
                             <li onClick={() => this.select(item.id)} key={item.id} className={className}>{item.name}</li>
                         )
