@@ -1,0 +1,103 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.App header {
+  padding: 1.25em;
+  background: whitesmoke;
+  box-shadow: 0 2px 5px #cccccc;
+  text-align: center;
+}
+
+.App main {
+  padding: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  margin: auto;
+}
+
+.Roller {
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+  padding: 0;
+  list-style: none;
+  /* background: linear-gradient(#bbb, #fff 40%, #fff 60%, #bbb); */
+}
+
+.Roller .RollerItem {
+  padding: 0.5em 1em;
+  margin: 0;
+  border-collapse: collapse;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.Roller .RollerItem.selected {
+  border-style: solid;
+  border-width: 1px 0px;
+  border-color: #ccc;
+  color: #069eff;
+}
+
+.Roller .RollerItem.highlight {
+  border: 1px solid #ccc;
+}
+
+.Roller .RollerItem.highlight--1 {
+  transform: rotateX(-30deg);
+}
+
+.Roller .RollerItem.highlight--2 {
+  transform: rotateX(-45deg);
+}
+
+.Roller .RollerItem.highlight--3 {
+  transform: rotateX(-60deg);
+}
+
+.Roller .RollerItem.highlight-1 {
+  transform: rotateX(30deg);
+}
+
+.Roller .RollerItem.highlight-2 {
+  transform: rotateX(45deg);
+}
+
+.Roller .RollerItem.highlight-3 {
+  transform: rotateX(60deg);
+}
+
+.ReservationPage {
+  display: flex;
+}
+
+.App .buttons {
+  text-align: center;
+}
+
+.App .buttons button {
+  color: #068adb;
+  background: none;
+  border: 1px solid #888888;
+  border-radius: 2px;
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
+.App .buttons button:hover {
+  color: #059fff;
+}
+
+.App .buttons button:active {
+  color: #035a91;
+}
