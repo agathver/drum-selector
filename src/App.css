@@ -29,10 +29,12 @@ body {
 .Roller {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin: 1em;
   padding: 0;
   list-style: none;
-  /* background: linear-gradient(#bbb, #fff 40%, #fff 60%, #bbb); */
+  perspective: 5000px;
+  background: linear-gradient(#bbb, #fff 40%, #fff 60%, #bbb);
 }
 
 .Roller .RollerItem {
@@ -41,6 +43,7 @@ body {
   border-collapse: collapse;
   box-sizing: border-box;
   text-align: center;
+  transition: all 0.5s;
 }
 
 .Roller .RollerItem.selected {
@@ -53,6 +56,12 @@ body {
 .Roller .RollerItem.disabled {
   text-decoration: line-through;
   color: #cccccc;
+}
+
+.Roller .RollerItem.highlight {
+  transform: rotateX(0deg);
+  border-width: 1px 0px;
+  border-color: #ccc;
 }
 
 .Roller .RollerItem.highlight--1 {
